@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <h1>Calculator by Solo.</h1>
+        <div class="acc" id="acc"></div>
+        <div class="sum" hidden></div>
+      </div>
+      <div class="buttons">
+        <!-- actions -->
+        <div class="sec1">
+          <button class="btn actionRow1" id="start" onclick="resetAll()">
+            C
+          </button>
+          <button class="btn actionRow1" id="sec" onclick="cleanCurrent()">
+            CE
+          </button>
+          <button class="btn actionRow1" id="sec" onclick="Percentage()">
+            %
+          </button>
+          <button class="btn actionRow1" id="sec" onclick="CalcAction('/')">
+            /
+          </button>
+        </div>
+
+        <div class="sec2">
+          <button class="btn num7" onclick="addNumber(7)">7</button>
+          <button class="btn num8" onclick="addNumber(8)">8</button>
+          <button class="btn num9" onclick="addNumber(9)">9</button>
+          <button class="btn action" id="sec" onclick="CalcAction('x')">
+            x
+          </button>
+        </div>
+
+        <div class="sec3">
+          <button class="btn num4" onclick="addNumber(4)">4</button>
+          <button class="btn num5" onclick="addNumber(5)">5</button>
+          <button class="btn num6" onclick="addNumber(6)">6</button>
+          <button class="btn action" id="sec" onclick="CalcAction('-')">
+            -
+          </button>
+        </div>
+
+        <div class="sec4">
+          <button class="btn num1" onclick="addNumber(1)">1</button>
+          <button class="btn num2" onclick="addNumber(2)">2</button>
+          <button class="btn num3" onclick="addNumber(3)">3</button>
+          <button class="btn action" id="sec" onclick="CalcAction('+')">
+            +
+          </button>
+        </div>
+
+        <div class="sec5">
+          <button class="btn sign" onclick="addComma()">.</button>
+          <button class="btn num0" onclick="addNumber(0)">0</button>
+          <button class="btn sign" onclick="addComma()">,</button>
+          <button class="btn total" id="total" onclick="Result()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./calc.js"></script>
+  </body>
+</html>

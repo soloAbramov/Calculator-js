@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(to right, #abe7e0 0%, #66d8cb 100%);
+}
+
+.container {
+  max-width: 20vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  left: 38vw;
+  background-color: #0b2742;
+  border-radius: 2rem;
+}
+
+.result {
+  width: 20vw;
+  height: 28vh;
+  position: relative;
+  bottom: 27%;
+  border-radius: 2rem 2rem 0 0rem;
+  background-color: #0c263b;
+  border-bottom: 1px solid #1a79b2;
+}
+
+.result h1 {
+  /* position: relative;
+  bottom: 8rem; */
+  color: white;
+  font-size: 1.4em;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.buttons {
+  position: relative;
+  top: 7%;
+}
+
+button {
+  width: 4.8vw;
+  font-size: 2.4rem;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  background-color: #0b2742;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #194268;
+  border-radius: 2rem;
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 80%;
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 60%;
+}
+.sec3 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 40%;
+}
+.sec4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 20%;
+}
+
+.sec5 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 0%;
+}
+
+#start {
+  color: #e38249;
+}
+
+#start:hover,
+#sec:hover {
+  color: white;
+}
+
+#sec {
+  color: #48a7de;
+}
+
+#total {
+  background-color: #48a7de;
+  border-radius: 0.3rem;
+}
+
+#total:hover {
+  background-color: #48a7dea1;
+}
+
+.acc {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 1.5em;
+  position: relative;
+  left: 40%;
+  top: 90px;
+}
+
+.sum {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 2.2em;
+  position: relative;
+  left: 65%;
+  top: 100px;
+}
